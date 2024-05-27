@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -8,17 +12,30 @@ body {
 
 header {
     height: 7vh;
+    width: 99%;
     background: white;
     color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 10px 0px 10px;
+    position: fixed;
+}
+
+header .bi-list {
+    cursor: pointer;
+    height: 46px;
+    width: 46px;
 }
 
 header .logo {
     font-weight: bold;
     font-size: 20px;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: black;
 }
 
 header .navbar {
@@ -42,10 +59,12 @@ header .navbar a:hover {
 .bi-x-circle {
     display: none;
     cursor: pointer;
+    height: 46px;
+    width: 46px;
 }
 
 .container {
-    height: 93vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,7 +72,6 @@ header .navbar a:hover {
     background: url(backgroundmdcarwash.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: .5;
 }
 
 .container .home-text {
@@ -70,6 +88,52 @@ header .navbar a:hover {
 
 .container .home-img {
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.container .home-text .buttons-home {
+    margin-top: 20px;
+}
+
+.container .home-text .buttons-home .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.container .home-text .buttons-home a {
+    text-decoration: none;
+    color: black;
+}
+
+.container .home-text .buttons-home .btn:hover {
+    transform: translateY(-5px);
+}
+
+.container .home-text .buttons-home .btn:first-child {
+    background-color: rgb(122, 17, 213);
+    color: black;
+}
+
+.container .home-text .buttons-home .btn:last-child {
+    background-color: rgb(208, 15, 131);
+    color: white;
+}
+
+.car-section {
+    padding: 20px;
+    background-color: #ffffff;
+    color: black;
 }
 
 /* car box */
@@ -80,19 +144,19 @@ header .navbar a:hover {
 }
 .car-box {
     border: 1px solid #ccc;
-    background-color: #383838;
+    background-color: #3838384b;
     padding: 20px;
     margin: 10px;
     width: 300px;
     text-align: center;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.543);
+    box-shadow: 0px 0px 10px rgba(39, 38, 38, 0.543);
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
 }
 
 .car-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px rgba(66, 65, 65, 0.2);
 }
 
 .car-image {
@@ -119,4 +183,54 @@ header .navbar a:hover {
 
 .car-box a:hover {
     background-color: #303592; /* Donkerder groene kleur */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .car-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 10px;
+    }
+
+    header .navbar a {
+        font-size: 11px;
+    }
+
+    .bi-list, .bi-x-circle {
+        height: 30px;
+        width: 30px;
+        padding-right: 10px;
+    }
+
+    .container .home-text {
+        width: 100%;
+    }
+
+    .container .home-text p {
+        font-size: 15px;
+    }
+
+    .container .home-img {
+        display: none;
+    }
+
+    .container .home-text .buttons-home .btn {
+        font-size: 14px;
+        
+    }
 }

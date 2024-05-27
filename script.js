@@ -41,8 +41,8 @@ fetch('http://localhost:3000/cars')
       <p>€${car.price} p/dag</p>
       <p>Minimum leeftijd : ${car.minage}</p>
       <p>${car.fuel}</p>
-      <a href="#" class="btn">View Details</a>
-      <a href="#" class="btn">Rent Now</a>
+      <a href="#" class="btn">Bekijk Details</a>
+      <a href="#" class="btn">Huur Nu</a>
     `;
     carContainer.appendChild(carBox);
   });

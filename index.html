@@ -9,17 +9,17 @@
 <body>
     <header>
         <div class="logo">
-            <h1>CarRentals</h1>
+            <a href="#"><h1>Carental</h1></a>
         </div>
         <div class="navbar">
-            <svg id="menuButton" xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="cursor: pointer;">
+            <svg id="menuButton" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="cursor: pointer;">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
             </svg>
             <a href="#">Home</a>
-            <a href="#">Over Ons</a>
+            <a href="#car-section">Voertuigen</a>
             <a href="#">Documentatie</a>
             <a href="#">Contact</a>
-            <svg id="closeButton" xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" style="cursor: pointer;">
+            <svg id="closeButton" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" style="cursor: pointer;">
                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                 <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
             </svg>
@@ -28,16 +28,30 @@
 
     <div class="container">
         <div class="home-text">
-            <h1>Home Text</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eligendi voluptate, tempore ea maiores architecto iusto? Laborum eos, quod corrupti, quaerat atque, ex magnam quisquam numquam voluptate deleniti praesentium omnis?</p>
+            <h1>Carental BE</h1>
+            <p>Onze toegewijde team staat klaar om je te begeleiden bij elke stap van je reis. Of je nu op zoek bent naar de perfecte auto voor een speciale gelegenheid, een onvergetelijke roadtrip plant of gewoon een opwindende rit wilt maken, we zijn er om ervoor te zorgen dat je een ervaring hebt die je nooit zult vergeten.</p>
+            <div class="buttons-home">
+                <a href="#car-section" class="btn">Voertuigen</a>
+                <a href="#" class="btn">Contact</a>
+            </div>
         </div>
 
         <div class="home-img">
-            <img src="" alt="">
+            <img src="https://i.pinimg.com/originals/55/de/cc/55deccc45775ad852fda247ef9bf46ee.jpg" alt="">
         </div>
     </div>
 
-    <section class="car-section">
+    <section class="car-section" id="car-section">
+        <h1>Onze Assortiment</h1>
+        <div class="filter-section">
+            <input type="text" id="search-input" placeholder="Zoeken...">
+            <select id="filter-select">
+                <option value="">Alles</option>
+                <option value="hatchback">Hatchback</option>
+                <option value="suv">SUV</option>
+                <option value="coupe">Coupe</option>
+            </select>
+        </div>
         <div class="car-container" id="car-container"></div>
     </section>
     
