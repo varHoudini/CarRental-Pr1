@@ -57,19 +57,19 @@ app.use(cors());
 // Verbind met de database
 connectToDatabase();
 
-// Voeg hier je routes toe
-app.get("/users", (req, res) => {
-  db.query("SELECT * FROM users", (err, results) => {
-    if (err) {
-      console.error("Fout bij het ophalen van gebruikers:", err);
-      res.status(500).send("Fout bij het ophalen van gebruikers.");
-      return;
-    }
-    res.json(results);
+// Route om alle data uit de 'cars'-tabel op te halen
+app.get("/cars", (req, res) => {
+    db.query("SELECT * FROM cars", (err, results) => {
+      if (err) {
+        console.error("Fout bij het ophalen van auto's:", err);
+        res.status(500).send("Fout bij het ophalen van auto's.");
+        return;
+      }
+      res.json(results);
+    });
   });
-});
-
-// Start de server
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+  
+  // Start de server
+  app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+  });
