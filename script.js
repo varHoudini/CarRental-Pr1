@@ -36,8 +36,13 @@ fetch('http://localhost:3000/cars')
     const carBox = document.createElement('div');
     carBox.classList.add('car-box');
     carBox.innerHTML = `
-      <img class="car-image" src="${car.img}" alt="${car.make} ${car.model}">
+      <img class="car-image" src="${car.img}" alt="${car.brand} ${car.model}">
       <h3>${car.brand} ${car.model} (${car.year})</h3>
+      <p>€${car.price} p/dag</p>
+      <p>Minimum leeftijd : ${car.minage}</p>
+      <p>${car.fuel}</p>
+      <a href="#" class="btn">View Details</a>
+      <a href="#" class="btn">Rent Now</a>
     `;
     carContainer.appendChild(carBox);
   });

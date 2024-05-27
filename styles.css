@@ -87,6 +87,7 @@ header .navbar a:hover {
     text-align: center;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.543);
     transition: all 0.3s ease-in-out;
+    border-radius: 8px;
 }
 
 .car-box:hover {
@@ -98,4 +99,24 @@ header .navbar a:hover {
     max-width: 100%;
     max-height: 200px;
     margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.car-box a {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #2d34b8; /* Groene kleur */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.car-box a:hover {
+    background-color: #303592; /* Donkerder groene kleur */
 }
