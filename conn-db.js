@@ -68,6 +68,19 @@ app.get("/cars", (req, res) => {
       res.json(results);
     });
   });
+
+// Route om alle Mercedes-auto's op te halen
+app.get("/cars/mercedes", (req, res) => {
+    db.query("SELECT * FROM cars WHERE brand = 'Mercedes'", (err, results) => {
+        if (err) {
+            console.error("Fout bij het ophalen van Mercedes-auto's:", err);
+            res.status(500).send("Fout bij het ophalen van Mercedes-auto's.");
+            return;
+        }
+        res.json(results);
+    });
+});
+
   
   // Start de server
   app.listen(port, () => {

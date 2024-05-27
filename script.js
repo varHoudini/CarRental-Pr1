@@ -38,13 +38,14 @@ fetch('http://localhost:3000/cars')
     carBox.innerHTML = `
       <img class="car-image" src="${car.img}" alt="${car.brand} ${car.model}">
       <h3>${car.brand} ${car.model} (${car.year})</h3>
-      <p>€${car.price} p/dag</p>
+      <p>€${car.price} p/dag &nbsp; €${car.borg} borg</p>
       <p>Minimum leeftijd : ${car.minage}</p>
-      <p>${car.fuel}</p>
+      <p>${car.fuel} &nbsp; ${car.transmission}</p>
       <a href="#" class="btn">Bekijk Details</a>
-      <a href="#" class="btn">Huur Nu</a>
+      <a href="#contact" class="btn">Huur Nu</a>
     `;
     carContainer.appendChild(carBox);
   });
 })
 .catch(error => console.error('Error fetching data:', error));
+ 

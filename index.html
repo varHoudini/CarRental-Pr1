@@ -17,8 +17,8 @@
             </svg>
             <a href="#">Home</a>
             <a href="#car-section">Voertuigen</a>
-            <a href="#">Documentatie</a>
-            <a href="#">Contact</a>
+            <a href="#documentatie">Documentatie</a>
+            <a href="#contact">Contact</a>
             <svg id="closeButton" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" style="cursor: pointer;">
                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                 <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
@@ -32,7 +32,7 @@
             <p>Onze toegewijde team staat klaar om je te begeleiden bij elke stap van je reis. Of je nu op zoek bent naar de perfecte auto voor een speciale gelegenheid, een onvergetelijke roadtrip plant of gewoon een opwindende rit wilt maken, we zijn er om ervoor te zorgen dat je een ervaring hebt die je nooit zult vergeten.</p>
             <div class="buttons-home">
                 <a href="#car-section" class="btn">Voertuigen</a>
-                <a href="#" class="btn">Contact</a>
+                <a href="#contact" class="btn">Contact</a>
             </div>
         </div>
 
@@ -41,19 +41,91 @@
         </div>
     </div>
 
+
+    <section class="documentatie" id="documentatie">
+            <h1>Documentatie</h1>
+            <p>Welkom bij de documentatie van ons autoverhuurbedrijf. Deze documentatie bevat alle relevante informatie die u nodig heeft om onze diensten te begrijpen, te gebruiken en te integreren.</p>
+            
+            <ol>
+                <li>
+                    <h2>Overzicht</h2>
+                    <ul>
+                        <li>Missie: Onze missie is om hoogwaardige autoverhuurdiensten aan te bieden met een focus op klanttevredenheid en gemak.</li>
+                        <li>Doelgroep: Onze diensten zijn gericht op particulieren en bedrijven die behoefte hebben aan tijdelijke transportoplossingen.</li>
+                        <li>Aanbod: We bieden een breed scala aan auto's, waaronder personenauto's, SUV's, bestelwagens en luxe voertuigen.</li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <h2>Registratie en Accountbeheer</h2>
+                    <ul>
+                        <li>Registratieproces: Beschrijving van het proces voor het aanmaken van een account op ons platform.</li>
+                        <li>Inloggen: Instructies voor het inloggen op een bestaand account.</li>
+                        <li>Accountbeheer: Functionaliteiten voor het bewerken van profielinformatie, wachtwoordbeheer en accountinstellingen.</li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <h2>Voertuigreservering</h2>
+                    <ul>
+                        <li>Zoeken naar voertuigen: Uitleg over hoe gebruikers voertuigen kunnen zoeken op basis van locatie, datum en voertuigtype.</li>
+                        <li>Beschikbaarheid controleren: Instructies voor het controleren van de beschikbaarheid van voertuigen voor specifieke datums.</li>
+                        <li>Reserveringsproces: Stapsgewijze handleiding voor het maken van een reservering, inclusief betalingsinformatie en bevestiging.</li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <h2>Verhuurvoorwaarden en beleid</h2>
+                    <ul>
+                        <li>Tarieven en toeslagen: Details over onze tariefstructuur, inclusief eventuele extra kosten.</li>
+                        <li>Verzekering: Informatie over het verzekeringsbeleid en eventuele optionele dekkingen.</li>
+                        <li>Annulerings- en wijzigingsbeleid: Beschrijving van ons beleid met betrekking tot annuleringen, wijzigingen en terugbetalingen.</li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <h2>Klantenondersteuning</h2>
+                    <ul>
+                        <li>Contactgegevens: Contactinformatie voor klantenondersteuning, inclusief telefoonnummers, e-mailadressen en kantooruren.</li>
+                        <li>Veelgestelde vragen (FAQ): Antwoorden op veelgestelde vragen met betrekking tot reserveringen, betalingen en andere veelvoorkomende zorgen.</li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <h2>Integratie en API-documentatie</h2>
+                    <ul>
+                        <li>API-endpoints: Beschrijving van de beschikbare API-endpoints voor het integreren van onze reserveringssysteem in externe toepassingen.</li>
+                        <li>Authenticatie: Instructies om de authenticatie van de API-endpoints te volgen.</li>
+                    </ul>
+                </li>
+            </ol>
+    </section>
+
     <section class="car-section" id="car-section">
         <h1>Onze Assortiment</h1>
         <div class="filter-section">
             <input type="text" id="search-input" placeholder="Zoeken...">
             <select id="filter-select">
                 <option value="">Alles</option>
-                <option value="hatchback">Hatchback</option>
-                <option value="suv">SUV</option>
-                <option value="coupe">Coupe</option>
-            </select>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Audi">Audi</option>
+                <option value="Volkswagen">Volkswagen</option>
+            </select>            
         </div>
+
         <div class="car-container" id="car-container"></div>
     </section>
+
+    <section class="contact" id="contact">
+        <h1>Contact</h1>
+        <p>Neem contact met ons op. Wij zullen zo snel mogelijk contact met u opnemen.</p>
+        <form>
+            <input type="text" placeholder="Uw naam" required>
+            <input type="email" placeholder="Uw e-mailadres" required>
+            <textarea placeholder="Uw bericht" required></textarea>
+            <button type="submit">Versturen</button>
+        </form>
+    </section>    
     
     <script src="script.js"></script>
 </body>

@@ -59,8 +59,8 @@ header .navbar a:hover {
 .bi-x-circle {
     display: none;
     cursor: pointer;
-    height: 46px;
-    width: 46px;
+    height: 35px;
+    width: 35px;
 }
 
 .container {
@@ -122,7 +122,7 @@ header .navbar a:hover {
 
 .container .home-text .buttons-home .btn:first-child {
     background-color: rgb(122, 17, 213);
-    color: black;
+    color: white;
 }
 
 .container .home-text .buttons-home .btn:last-child {
@@ -132,8 +132,13 @@ header .navbar a:hover {
 
 .car-section {
     padding: 20px;
-    background-color: #ffffff;
-    color: black;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.car-section h1 {
+    margin: 0;
+    font-size: 35px;
 }
 
 /* car box */
@@ -149,14 +154,14 @@ header .navbar a:hover {
     margin: 10px;
     width: 300px;
     text-align: center;
-    box-shadow: 0px 0px 10px rgba(39, 38, 38, 0.543);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.543);
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
 }
 
 .car-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 0px 15px rgba(66, 65, 65, 0.2);
+    box-shadow: 0px 0px 15px rgba(194, 189, 189, 0.2);
 }
 
 .car-image {
@@ -184,6 +189,134 @@ header .navbar a:hover {
 .car-box a:hover {
     background-color: #303592; /* Donkerder groene kleur */
 }
+
+/* filter-section */
+.filter-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: none;
+    color: #ffffff;
+    width: 250px;
+}
+
+#search-input:focus {
+    outline: none;
+}
+
+#filter-select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 200px;
+    color: #ffffff;
+    background: none;
+    appearance: none;
+}
+
+/* Documentatie section */
+section.documentatie {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff; /* witte achtergrond */
+    color: #000000; /* donkere tekst */
+    padding: 20px;
+}
+
+section.documentatie h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section.documentatie p {
+    margin-bottom: 15px;
+}
+
+section.documentatie ol {
+    list-style-type: none;
+}
+
+section.documentatie h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+section.documentatie ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+section.documentatie ul li {
+    margin-bottom: 5px;
+}
+
+section.documentatie ul li:last-child {
+    margin-bottom: 0;
+}
+
+section.documentatie ul li::before {
+    content: "\2022";
+    color: #fbbf24;
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Contact section */
+/* Contact section */
+section.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section.contact h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section.contact p {
+    margin-bottom: 20px;
+}
+
+section.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+section.contact input,
+section.contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+section.contact button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blauwe kleur */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+section.contact button:hover {
+    background-color: #0056b3; /* Donkerder blauwe kleur */
+}
+
 
 
 
@@ -231,6 +364,18 @@ header .navbar a:hover {
 
     .container .home-text .buttons-home .btn {
         font-size: 14px;
-        
+    } 
+
+    #search-input {
+        width: 150px;
+        border-radius: 0;
+    }
+
+    #filter-select {
+        width: 150px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        font-size: 12px;
     }
 }
